@@ -1,7 +1,6 @@
-angular.module('angular-anagram.main', [])
+angular.module('angular-anagram.advanced', [])
 
-.controller('MainController', function($scope, Strings) {
-
+.controller('AdvancedController', function($scope, Strings) {
 
 
   $scope.generateAnagram = function() {
