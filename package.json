@@ -1,0 +1,24 @@
+{
+  "name": "angular-anagram",
+  "version": "1.0.0",
+  "description": "A simple anagram generator in AngularJS",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/admoores/angular-anagram.git"
+  },
+  "author": "Alex Moores",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/admoores/angular-anagram/issues"
+  },
+  "homepage": "https://github.com/admoores/angular-anagram#readme",
+  "dependencies": {
+    "express": "^4.15.5",
+    "path": "^0.12.7"
+  }
+}
