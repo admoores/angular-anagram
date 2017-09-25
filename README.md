@@ -24,3 +24,7 @@ An anagram generator made using AngularJS
 - Step 4: Master requirements
   - Added view/nav for Master version
   - Implemented sortBy and filter for Master-level requirements
+- Step 5: Impossible Requirements
+  - Added view/nav for Impossible version
+  - Imported list of English words found online
+  - Altered generator function to only produce real words

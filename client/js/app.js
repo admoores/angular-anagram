@@ -3,6 +3,7 @@ angular.module('angular-anagram', [
   'angular-anagram.main',
   'angular-anagram.advanced',
   'angular-anagram.master',
+  'angular-anagram.impossible',
   'ngRoute'
   ])
 
@@ -19,6 +20,10 @@ angular.module('angular-anagram', [
   .when('/master', {
     templateUrl: '/templates/master.html',
     controller: 'MasterController'
+  })
+  .when('/impossible', {
+    templateUrl: '/templates/impossible.html',
+    controller: 'ImpossibleController'
   })
   .otherwise({
     redirectTo: '/main'

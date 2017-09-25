@@ -1,0 +1,27 @@
+<div id="impossible">
+  <h1> Impossible Anagram Generator </h1>
+  <input type="text" ng-model="inputText" ng-change="generateAnagram(false)"/>
+  <button ng-click="generateAnagram(true)">Re-Roll</button>
+  <table>
+    <thead>
+      <th>Index</th>
+      <th>Anagram</th>
+      <th>Lock?</th>
+    </thead>
+    <tbody ng-repeat="anagram in outputText | orderBy: sortPriority | filter: filterParam track by $index">
+      <tr>
+        <td>{{$index}}</td>
+        <td>{{anagram.value}}</td>
+        <td><input type='checkbox' ng-model='anagram.locked' ng-true-value='true' ng-false-value='false'/></td>
+      </tr>
+    </tbody>
+  </table>
+  Search Anagrams: <input type='text' ng-model='filterParam.value'/>
+  <div style="margin-top: 15px">
+    <button ng-click="sort()">Sort</button>
+    Sort Type: {{sortType}}
+  </div>
+  <div style="margin-top: 15px">
+    Allow non-words: <input type="checkbox" ng-model="nonWords" ng-true-value='true' ng-false-value='false' ng-change='generateAnagram(true)'/>
+  </div>
+</div>

@@ -9,7 +9,6 @@ angular.module('angular-anagram.master', [])
   }
 
   $scope.reRoll = function() {
-    $scope.sortPriority = null;
     for (var i = 0; i < 10; i++) {
       if(!($scope.outputText[i].locked)) {
         $scope.outputText[i].value = Strings.shuffleString($scope.inputText);
