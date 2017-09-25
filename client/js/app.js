@@ -1,5 +1,4 @@
 angular.module('angular-anagram', [
-  'angular-anagram.services',
   'angular-anagram.main',
   'ngRoute'
   ])
@@ -7,7 +6,7 @@ angular.module('angular-anagram', [
 .config(function ($routeProvider, $httpProvider) {
   $routeProvider
   .when('/', {
-    templateUrl: 'templates/main.html',
+    templateUrl: '/templates/main.html',
     controller: 'MainController'
   })
   .otherwise({
