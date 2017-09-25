@@ -9,7 +9,6 @@ angular.module('angular-anagram.impossible', [])
     $scope.outputText.push({value: '', locked: false});
   }
 
-
   $scope.generateAnagram = function(reRoll) {
     if ($scope.nonWords) {
       for (var i = 0; i < 10; i++) {
@@ -31,6 +30,7 @@ angular.module('angular-anagram.impossible', [])
       for (var j = 0; j < 10; j++) {
         if (!$scope.outputText[j].locked || !reRoll) {
           var randIndex = Math.floor(Math.random() * acceptableWords.length);
+
           $scope.outputText[j].value = acceptableWords[randIndex];
         }
       }
