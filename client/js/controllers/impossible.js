@@ -37,6 +37,8 @@ angular.module('angular-anagram.impossible', [])
     }
   }
 
+
+
   $scope.sort = function() {
     if ($scope.sortPriority === 'value') {
       $scope.sortPriority = '-value';
