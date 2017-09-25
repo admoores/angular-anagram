@@ -1,6 +1,12 @@
 # angular-anagram
 An anagram generator made using AngularJS
 
+### Usage
+- Requires up-to-date Node, NPM
+  - run `npm install`
+  - run `npm start`
+  - Navigate to `localhost:8080`
+
 
 ### Steps
 - Step 0: AngularJS Boilerplate
@@ -11,3 +17,10 @@ An anagram generator made using AngularJS
   - Created new views to serve the Advanced, Master, and Impossible criteria
   - Added Services file to allow re-use of shuffle function
   - Added navigation to choose views
+- Step 3: Creating advanced version for second view
+  - Modified outputText to be a list with values and lock booleans
+  - On re-roll, only shuffles if lock is false
+  - Displayed information in a table
+- Step 4: Master requirements
+  - Added view/nav for Master version
+  - Implemented sortBy and filter for Master-level requirements

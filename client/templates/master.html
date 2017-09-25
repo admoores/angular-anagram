@@ -1,5 +1,5 @@
-<div id="advanced">
-  <h1> Advanced Anagram Generator </h1>
+<div id="master">
+  <h1> Master Anagram Generator </h1>
   <input type="text" ng-model="inputText" ng-change="generateAnagram()"/>
   <button ng-click="reRoll()">Re-Roll</button>
   <table>
@@ -8,7 +8,7 @@
       <th>Anagram</th>
       <th>Lock?</th>
     </thead>
-    <tbody ng-repeat="anagram in outputText track by $index">
+    <tbody ng-repeat="anagram in outputText | orderBy: sortPriority | filter: filterParam track by $index">
       <tr>
         <td>{{$index}}</td>
         <td>{{anagram.value}}</td>
@@ -16,4 +16,9 @@
       </tr>
     </tbody>
   </table>
+  Search Anagrams: <input type='text' ng-model='filterParam.value'/>
+  <div style="margin-top: 15px">
+    <button ng-click="sort()">Sort</button>
+    Sort Type: {{sortType}}
+  </div>
 </div>
